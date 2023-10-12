@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif !important ;
+  height: auto;
+  width: auto;
+}
+.container {
+  background-image: url(image/bgimg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2225px;
+  overflow: hidden;
+}
+.navbar {
+  padding: 4px 10px;
+  display: flex;
+  background: rgb(0, 0, 0);
+  height: 40px;
+}
+
+.navlist {
+  display: flex;
+  padding: 2px 12px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.list {
+  width: 50%;
+  padding: 2px;
+  margin: auto;
+}
+
+.navlist li a {
+  margin: 2px 10px;
+  padding: 2px 20px;
+  text-decoration: none;
+  color: rgb(54, 51, 67);
+  font-size: 17.5px;
+  color: white;
+}
+
+.navlist li a:hover {
+  margin: 2px 8px;
+  padding: 2px 18px;
+  color: black;
+  font-size: 19px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.form {
+  margin: 0px 4px;
+  padding: 4px;
+  display: flex;
+}
+.btn {
+  font-size: 14px;
+  margin: 3px;
+  padding: 2px 2px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 4px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.btn a:hover {
+  color: black;
+}
+.btn:hover ~ a {
+  color: black;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: white;
+}
+.logo {
+  position: fixed;
+  top: 6px;
+  left: 10px;
+  z-index: 10;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 4px 13px;
+  justify-content: center;
+  user-select: none;
+}
+.img {
+  height: 33px;
+  border-radius: 50%;
+  width: 33px;
+  margin-right: 19px;
+  cursor: pointer;
+  user-select: none;
+}
+.section {
+  height: 293px;
+  width: 593px;
+  position: absolute;
+  top: 180px;
+  left: 150px;
+}
+.sec1 img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: inset 10px 10px 15px #ccc, inset -10px 10px 15px #ccc,
+    inset 10px -10px 15px #ccc, inset -10px -10px 15px #ccc;
+  border-radius: 10px;
+}
+.sec1 {
+  right: 190px;
+  height: 500px;
+  width: 372px;
+  position: absolute;
+  top: 180px;
+  background-color: rgb(241, 241, 255);
+}
+.section h1 {
+  font-size: 50px;
+  margin: 25px;
+  padding: 10px;
+}
+.section p {
+  font-size: 25px;
+  margin: 25px;
+  padding: 10px;
+}
+.para {
+  text-transform: uppercase;
+  font-size: 25px;
+  position: absolute;
+  font-weight: bold;
+  top: 681px;
+  left: 119px;
+  padding: 60px;
+}
+.para p {
+  text-align: center;
+}
+.name::after {
+  content: "Mr. Gopal Tiwari";
+  font-size: 20px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 6px 4px;
+  background: linear-gradient(rgb(83, 247, 234), rgb(96, 227, 153));
+}
+.course {
+  position: relative;
+  top: 800px;
+  left: 186px;
+  display: flex;
+  max-width: 80vw;
+  flex-direction: column;
+  margin: 35px;
+  padding: 15px;
+  margin-top: 80px;
+}
+.sec {
+  position: relative;
+  margin: 16px 6px;
+  padding: 4px;
+  width: 100%;
+  font-size: 20px;
+  height: 275px;
+  display: flex;
+}
+.sec h2 {
+  margin: auto;
+  max-width: fit-content;
+  padding: 2px 0px;
+}
+.contact {
+  font-size: 29px;
+  position: relative;
+  top: 777px;
+}
+.contact h2 {
+  margin: auto;
+  padding: 5px;
+  max-width: fit-content;
+}
+.contact ul li {
+  margin: auto;
+  max-width: fit-content;
+  padding: 5px 0px;
+  list-style: none;
+}
+.contact ul li a {
+  text-decoration: none;
+}
+
+.sec-img {
+  height: 250px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-img img {
+  height: 242px;
+  width: 350px;
+}
+.one {
+  max-width: 50%;
+  padding: 0px 10px;
+}
+.sec:nth-child(2) {
+  flex-direction: row-reverse;
+  left: -190px;
+}
+.footer {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+button:hover {
+  color: black;
+}
+.animate {
+  transform: translateY(-110%);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+@media only screen and (max-width: 500px) {
+    .container{height: auto;}
+    .section {position: static;
+      display: block;
+      height: auto;
+      width: auto;}
+    .sec1 img {display: block;}
+    .navlist {padding-top: 40px;
+      flex-direction: column;}
+    .navbar {flex-direction: column;
+      height: 230px;}
+    .form {justify-content: flex-end;}
+    .navlist li {margin: 8px;}
+    .list{width: auto;}
+    .btn {border: 2px solid white;}
+    #home {display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;}
+    .sec1 {position: static;}
+    html{text-align: center;}
+    .content{display: flex;
+      align-items: center;}
+    .para{position: static;
+      font-size: 14px;
+      padding: 10px;}
+    .course{position: static;
+      margin: unset;
+      padding: unset;}
+    .sec{flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      height: 470px;}
+    .one{max-width: 100%;}
+    .two{position: static;
+      display: flex;
+      flex-direction: column;}
+    .sec:nth-child(2){position: static;
+      flex-direction: column;}
+    .sec-img{position: static;}
+    .sec-img img{height: auto;
+      width:auto;}
+    .contact{position: static;
+      font-size: 20px;}
+    .footer{margin: 10px;
+      font-size: 15px;}
+  }
+
